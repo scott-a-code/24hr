@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid blue 2px; */
+    height: 100vh;
+}
+
+.header-container {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* border: solid red 2px; */
+    padding: 15px;
+}
+
+/* header {
+    width: 100%;
+    min-height: 35px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid green 2px;
+} */
+
+a {
+    text-decoration: none;
+    color: rgb(68, 67, 67);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid gold 2px; */
+    width: 500px;
+    margin-bottom: 200px;
+}
+
+.navbutton {
+    padding: 10px 10px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.left{
+    float: left;
+    width: 250px;
+}
+
+.right{
+    float: right;
+}
+
+.btn{
+    border-radius: 4px;
+    color: rgb(43, 38, 38);
+    background-color: rgb(252, 248, 248);
+    font-family: sans-serif;
+    border: none;
+    margin: 10px;
+    width: 180px;
+    height: 25px;
+}
+
+#btn-10rs {
+    border-radius: 2px;
+    margin-left: 130px;
+}
+
+#btn-singleRes {
+    float: right;
+    margin-right: 130px;
+}
+
+#search-bar{
+    width: 600px;
+    height: 35px;
+    border-radius: 40px;
+    border-color: rgb(219, 218, 218);
+    border-width: 1px;
+    margin: 25px;
+}
+.search-bar-icon {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/735px-Magnifying_glass_icon.svg.png");   
+    background-position: left;
+    background-repeat: no-repeat;   
+    padding-left: 30px;
+    background-size: 25px;
+}
+
+/* .search-bar-mic {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/625px-Google_mic.svg.png");   
+    background-position: right;
+    background-repeat: no-repeat; 
+    background-size: 25px;
+} */
+
+footer{
+    /* border: solid gold 2px; */
+    height: 30px;
+    background-color: rgb(240, 232, 232);
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    /* text-align:left; */
+    text-align: justify;
+}
+
+#ft-text{
+     padding: 15px 30px;    
+} 
