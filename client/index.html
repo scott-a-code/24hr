@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link href="style.css" rel="stylesheet">
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="style.css" rel="stylesheet" />
     <script defer src="./index.js"></script>
     <title>Anime Search engine</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header-container">
-        <nav>
-            <div class="left">
-            <a href="#" class="navbutton">About</a>
-            <a href="#" class="navbutton">Store</a>
-            </div>
-            <div class="right">
-            <a href="#" class="navbutton">G-mail</a>
-            <a href="#" class="navbutton">Images</a>
-            <a href="#" class="navbutton">Google Apps</a>
-            <a href="#" class="navbutton">Google Account</a>
-            </div>
-        </nav>
+      <nav>
+        <div class="left">
+          <a href="#" class="navbutton">About</a>
+          <a href="#" class="navbutton">Store</a>
+        </div>
+        <div class="right">
+          <a href="#" class="navbutton">G-mail</a>
+          <a href="#" class="navbutton">Images</a>
+          <a href="#" class="navbutton">Google Apps</a>
+          <a href="#" class="navbutton">Google Account</a>
+        </div>
+      </nav>
     </div>
     <main>
-        <section>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-            <form>
-                <div>
-                    <label for="search-bar"></label>
-                    <input id="search-bar" class="search-bar-icon search-bar-mic" type="text"><br>
-                </div>
-                <label for="btn-10rs"></label>
-                <input id="btn-10rs" class="btn" type='submit' value="Anime Search">
-                <label for="btn-singleRes"></label>
-                <input id="btn-singleRes" class="btn" type='submit' value="Anime recommendation">
-            </form>
-        </section>
-        <div id="search-results">
-            <h3>Search results:</h3>
-            <ul>
-    
-            </ul>
-        </div>
-        <footer id="ft-text">United Kingdom</footer>
+      <section>
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          draggable="false"
+        />
+        <form>
+          <div>
+            <label for="search-bar"></label>
+            <input
+              id="search-bar"
+              class="search-bar-icon search-bar-mic"
+              type="text"
+            /><br />
+          </div>
+          <label for="btn-10rs"></label>
+          <input id="btn-10rs" class="btn" type="submit" value="Anime Search" />
+          <label for="btn-singleRes"></label>
+          <input
+            id="btn-singleRes"
+            class="btn"
+            type="submit"
+            value="Anime recommendation"
+          />
+        </form>
+      </section>
+      <div id="search-results">
+        <h3>Search results:</h3>
+        <ul></ul>
+      </div>
+      <footer id="ft-text">United Kingdom</footer>
     </main>
-</body>
+  </body>
 </html>

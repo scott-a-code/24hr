@@ -5,55 +5,37 @@ class AnimeShow {
         // Attributes and methods go here
         this.id = data.id,
         this.name = data.name,
-        this.genre = data.genre,
-        this.synopsis = data.synopsis,
-        this.airing = data.airing,
-        this.numberOfEpisodes = data.numberOfEpisodes,
-        this.malScore = data.malScore,
+        this.metaData = data.genre,
         this.url = data.url
     }
     // Static methods go here
     static get all() {
         return animeData
     }
-    static addShow(data) {
-        const newShow = new AnimeShow(data);
-        let metaData = [];
-
-
-        metaData.push(data.name.split(' '));
-        metaData.push(data.genre);
-        metaData.push(data.synopsis.split(' '));
-
-
-        newShow.metaData = metaData.flat();
-        animeData.push(newShow);
-        return newShow
-    }
     static findMatches(search) {
-        // search is an array
+
         let shows = AnimeShow.all
         let matchCount = 0
         let matches = []
-        // console.log(shows)
         
-        // This is nasty and brute force but it works
+        // This is looks nasty and brute force but it works, I would refactor this if I had more time.
         shows.forEach(show => {
             show.metaData.forEach(tag => {
                 if (search.includes(tag)) {
                     matchCount++
-                    console.log(tag)
                 }
             });
 
             if (matchCount > 0) {
                 matches.push(show)
             }
+            matchCount = 0
         });
 
 
         if (matches.length === 0) {
-            return 'no matches'
+            // this error handling is bad, I added it at the last second.
+            return [{name: 'no matches - Try things like comedy, romance or drama'}]
         } else {
             return matches
         }

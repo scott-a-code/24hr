@@ -2,24 +2,123 @@ const animeData = [
     {
         id: 1,
         name: 'Fruits Basket: The Final',
-        genre: [ 'Slice of Life', 'Comedy', 'Supernatural', 'Drama', 'Romance', 'Shoujo'],
-        synopsis: 'Hundreds of years ago, the Chinese Zodiac spirits and their god swore to stay together eternally. United by this promise, the possessed members of the Souma family shall always return to each other under any circumstances. Yet, when these bonds shackle them from freedom, it becomes an undesirable burden—a curse. As head of the clan, Akito is convinced that he shares a special connection with the other Soumas. While he desperately clings to this fantasy, the rest of the family remains isolated and suppressed by the fear of punishment.Tooru Honda, who has grown attached to the Soumas, is determined to break the chains that bind them. Her companionship with the family and her friends encourages her to move forward with lifting the curse. However, due to confounding revelations, she struggles to find the tenacity to continue her endeavors. With time slowly withering away, Tooru contends with an uncertain future in hopes of reaching the tranquility that may lie beyond all this commotion.',
-        airing: false,
-        numberOfEpisodes: 13,
-        malScore: 9.18,
+        metaData: [ 'SLICE OF LIFE', 'COMEDY', 'SUPERNATURAL', 'DRAMA', 'ROMANCE', 'SHOUJO'],
         url: 'https://fruba.jp/'
     },
     {
         id: 2,
         name: 'Fullmetal Alchemist: Brotherhood',
-        genre: [ 'Action', 'Military', 'Adventure', 'Comedy', 'Drama', 'Magic', 'Fantasy', 'Shounen'],
-        synopsis: '"In order for something to be obtained, something of equal value must be lost."Alchemy is bound by this Law of Equivalent Exchange—something the young brothers Edward and Alphonse Elric only realize after attempting human transmutation: the one forbidden act of alchemy. They pay a terrible price for their transgression—Edward loses his left leg, Alphonse his physical body. It is only by the desperate sacrifice of Edward\'s right arm that he is able to affix Alphonse\'s soul to a suit of armor. Devastated and alone, it is the hope that they would both eventually return to their original bodies that gives Edward the inspiration to obtain metal limbs called "automail" and become a state alchemist, the Fullmetal Alchemist. Three years of searching later, the brothers seek the Philosopher\'s Stone, a mythical relic that allows an alchemist to overcome the Law of Equivalent Exchange. Even with military allies Colonel Roy Mustang, Lieutenant Riza Hawkeye, and Lieutenant Colonel Maes Hughes on their side, the brothers find themselves caught up in a nationwide conspiracy that leads them not only to the true nature of the elusive Philosopher\'s Stone, but their country\'s murky history as well. In between finding a serial killer and racing against time, Edward and Alphonse must ask themselves if what they are doing will make them human again... or take away their humanity.',
-        airing: false,
-        numberOfEpisodes: 64,
-        malScore: 9.17,
+        metaData: [ 'ACTION', 'MILITARY', 'ADVENTURE',  'DRAMA', 'MAGIC', 'FANTASY', 'SHOUNEN'],
         url: 'https://www.hagaren.jp/fa/'
     },
-
+    {
+        id: 3,
+        name: 'Naruto: Shippuuden',
+        metaData: [ 'ACTION', 'ADVENTURE', 'COMEDY',  'SUPER POWER', 'MARTICAL ARTS', 'SHOUNEN'],
+        url: 'https://www.viz.com/naruto'
+    },
+    {
+        id: 4,
+        name: 'Steins;Gate',
+        metaData: ['SCI-FI', 'PSYCHOLOGICAL' , 'DRAMA', 'THRILLER'],
+        url: 'https://steins-gate.us/'
+    },
+    {
+        id: 5,
+        name: 'Hunter X Hunter',
+        metaData: ['ACTION', 'ADVENTURE' , 'FANTASY', 'SHOUNEN', 'SUPER POWER'],
+        url: 'https://www.viz.com/hunter-x-hunter'
+    },
+    {
+        id: 6,
+        name: 'Attack on Titan',
+        metaData: ['ACTION', 'MILITARY' , 'MYSTERY', 'SUPER POWER','DRAMA', 'FANTASY','SHOUNEN'],
+        url: 'https://www.koeitecmoamerica.com/attackontitan/'
+    },
+    {
+        id: 7,
+        name: 'Code Geass',
+        metaData: ['ACTION', 'MILITARY' , 'SCI-FI', 'SUPER POWER', 'DRAMA', 'MECHA'],
+        url: 'http://www.geass.jp/'
+    },
+    {
+        id: 8,
+        name: 'Mob Psycho 100',
+        metaData: ['ACTION', 'SLICE OF LIFE' , 'COMEDY', 'SUPERNATURAL'],
+        url: 'http://mobpsycho100.com/'
+    },
+    {
+        id: 9,
+        name: 'Fate/Stay night',
+        metaData: ['ACTION', 'SUPERNATURAL' , 'MAGIC', 'FANTASY'],
+        url: 'https://www.fatestaynightusa.com/ubw/'
+    },
+    {
+        id: 10,
+        name: 'Jujutsu Kaisen',
+        metaData: ['ACTION', 'DEMONS' , 'SUPERNATURAL', 'SCHOOL', 'SHOUNEN'],
+        url: 'https://www.viz.com/jujutsu-kaisen'
+    },
+    {
+        id: 11,
+        name: 'Demon Slayer',
+        metaData: ['ACTION', 'HISTORICAL' , 'DEMONS', 'SUPERNATURAL', 'SHOUNEN'],
+        url: 'https://demonslayer-anime.com/'
+    },
+    {
+        id: 12,
+        name: 'Vinland Saga',
+        metaData: ['ACTION', 'ADVENTURE' , 'DRAMA', 'HISTORICAL', 'SEINEN'],
+        url: 'https://vinlandsaga.jp/'
+    },
+    {
+        id: 13,
+        name: 'Made in Abyss',
+        metaData: ['SCI-FI', 'ADVENTURE' , 'MYSTERY', 'DRAMA', 'FANTASY'],
+        url: 'http://miabyss.com/'
+    },
+    {
+        id: 14,
+        name: 'Death Note',
+        metaData: ['MYSTERY', 'POLICE' , 'PSYCHOLOGICAL', 'SUPERNATURAL', 'THRILLER', 'SHOUNEN'],
+        url: 'https://www.viz.com/death-note'
+    },
+    {
+        id: 15,
+        name: 'Hajime no Ippo',
+        metaData: ['COMEDY', 'SPORTS' , 'DRAMA', 'SHOUNEN'],
+        url: 'https://hajime-noippo.com/'
+    },
+    {
+        id: 16,
+        name: 'One Piece',
+        metaData: ['ACTION', 'ADVENTURE' , 'COMEDY', 'SUPER POWER', 'DRAMA', 'FANTASY', 'SHOUNEN'],
+        url: 'https://onepieceofficial.com/'
+    },
+    {
+        id: 17,
+        name: 'Toriko',
+        metaData: ['ACTION', 'ADVENTURE' , 'COMEDY', 'FANTASY', 'SHOUNEN'],
+        url: 'https://www.viz.com/toriko'
+    },
+    {
+        id: 18,
+        name: 'One Punch Man',
+        metaData: ['ACTION', 'SCI-FI', 'COMEDY' , 'PARODY', 'SUPER POWER', 'SUPERNATURAL'],
+        url: 'https://www.viz.com/one-punch-man'
+    },
+    {
+        id: 19,
+        name: 'Psycho-pass',
+        metaData: ['ACTION', 'SCI-FI', 'POLICE' , 'PSYCHOLOGICAL', 'THRILLER'],
+        url: 'https://psycho-pass.com/'
+    },
+    {
+        id: 20,
+        name: 'Mobile Suit Gundam: Iron-Blooded Orphans',
+        metaData: ['ACTION', 'DRAMA', 'MECHA' , 'SCI-FI', 'SPACE'],
+        url: 'https://en.gundam.info/series/tekketsu/'
+    }
 ]
 
 module.exports = animeData
