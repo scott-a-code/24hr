@@ -20,12 +20,15 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:search', (req, res) => {
+    console.log(req.params)
     // TODO take request params and convert to an array.
     // run a search, send the data back to the client
-    res.send(AnimeShow.all);
+
+    res.send(AnimeShow.all); // for now just send back all the data so we can format it. 
 });
 
 app.get('/lucky/:search', (req, res) => {
+    console.log(req.params)
     // TODO take request params and convert to an array.
     // run a search, send first one back to the client
     res.send('thanks for feeling lucky');
