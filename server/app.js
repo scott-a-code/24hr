@@ -24,12 +24,14 @@ app.get('/', (req, res) => {
 
 // Get results based on the search.
 app.get('/:search', (req, res) => {
-    res.send(AnimeShow.findMatches(req.params.search));
+    search = req.params.search.toUpperCase()
+    res.send(AnimeShow.findMatches(search));
 });
 
 // this does the same but just returns a random result
 app.get('/lucky/:search', (req, res) => {
-    const result = AnimeShow.findMatches(req.params.search);
+    search = req.params.search.toUpperCase()
+    const result = AnimeShow.findMatches(search);
     const randomIndex = Math.floor(Math.random() * result.length);
     res.send(result[randomIndex]);
 });
