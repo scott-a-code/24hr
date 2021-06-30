@@ -32,7 +32,16 @@ pageOfResults.addEventListener('submit', (event)=> {  //storing data to access p
 // number of results = data.length>=10 loop 10 times, data.length< 10, loop data.length
 
 //creating a new list and adding name of show
-function appendResult(data){          
+function appendResult(data){   
+
+  // Remove any items that are already shown in the dom.
+  const previousListItems = document.querySelectorAll('li')
+  if(previousListItems.length > 0) {
+    const items = Array.from(previousListItems)
+    items.forEach(item => item.remove());
+  }  
+  
+  
   // deciding how many times to loop for up to 10 test results
   let timesToRun;             
   (data.length>=10) ? timesToRun = 10 : timesToRun = data.length; 
