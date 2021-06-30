@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node app.js",
     "dev": "nodemon server/app.js"
   },
@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/scott-a-code/24hr#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "nodemon": "^2.0.8"
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.8",
+    "supertest": "^6.1.3"
   }
 }
