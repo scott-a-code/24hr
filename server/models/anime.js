@@ -6,10 +6,6 @@ class AnimeShow {
         this.id = data.id,
         this.name = data.name,
         this.metaData = data.genre,
-        this.synopsis = data.synopsis,
-        this.airing = data.airing,
-        this.numberOfEpisodes = data.numberOfEpisodes,
-        this.malScore = data.malScore,
         this.url = data.url
     }
     // Static methods go here
@@ -17,12 +13,12 @@ class AnimeShow {
         return animeData
     }
     static findMatches(search) {
-        
+
         let shows = AnimeShow.all
         let matchCount = 0
         let matches = []
         
-        // This is nasty and brute force but it works
+        // This is looks nasty and brute force but it works, I would refactor this if I had more time.
         shows.forEach(show => {
             show.metaData.forEach(tag => {
                 if (search.includes(tag)) {
@@ -38,7 +34,8 @@ class AnimeShow {
 
 
         if (matches.length === 0) {
-            return 'no matches'
+            // this error handling is bad, I added it at the last second.
+            return [{name: 'no matches - Try things like comedy, romance or drama'}]
         } else {
             return matches
         }
