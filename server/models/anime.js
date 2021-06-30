@@ -17,17 +17,17 @@ class AnimeShow {
         return animeData
     }
     static addShow(data) {
-        const newShow = new AnimeShow(data)
-        let metaData = []
+        const newShow = new AnimeShow(data);
+        let metaData = [];
 
 
-        metaData.push(data.name.split(' '))
-        metaData.push(data.genre)
-        metaData.push(data.synopsis.split(' '))
+        metaData.push(data.name.split(' '));
+        metaData.push(data.genre);
+        metaData.push(data.synopsis.split(' '));
 
 
-        newShow.metaData = metaData.flat()
-        animeData.push(newShow)
+        newShow.metaData = metaData.flat();
+        animeData.push(newShow);
         return newShow
     }
     static findMatches(search) {
@@ -45,10 +45,13 @@ class AnimeShow {
                     console.log(tag)
                 }
             });
+
             if (matchCount > 0) {
                 matches.push(show)
             }
         });
+
+
         if (matches.length === 0) {
             return 'no matches'
         } else {
