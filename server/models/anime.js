@@ -17,19 +17,16 @@ class AnimeShow {
         return animeData
     }
     static findMatches(search) {
-        // search is an array
-        console.log(search)
+        
         let shows = AnimeShow.all
         let matchCount = 0
         let matches = []
-        // console.log(shows)
         
         // This is nasty and brute force but it works
         shows.forEach(show => {
             show.metaData.forEach(tag => {
                 if (search.includes(tag)) {
                     matchCount++
-                    console.log(tag)
                 }
             });
 
