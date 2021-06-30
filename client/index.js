@@ -1,45 +1,20 @@
-console.log('hello');
-
 // Setup
-const pageOfResults = document.getElementById('btn-10rs');
-const singleResults = document.getElementById('btn-singleRes');
+const pageOfResults = document.querySelector('form');
+// const singleResults = document.getElementById('btn-singleRes');
 const animeResults = document.querySelector('ul');
-console.log(animeResults);
 
 //Binding event listeners
-pageOfResults.addEventListener('submit', search()); //refactor
-singleResults.addEventListener('submit', luckySearch());
-
-
-// linking to search button
-function search() {
-      fetch(`http://localhost:3000/${}`) // add in the word to pass in
+pageOfResults.addEventListener('submit', (event)=> {  //storing data to access properties as it returns an event obj
+  event.preventDefault();    
+  const searchQuery = document.getElementById('search-bar').value;
+  const resultType = event.submitter.id;
+      fetch(`http://localhost:3000/${searchQuery}`)
       .then(resp => resp.text())
-      .then(quote => document.getElementById('text').textContent = quote)
+      .then(result => console.log(result))
       .catch(console.warn);
-  }
-  
-  search();
+}); //refactor
 
-  // linking to single result button
-  function luckySearch() {
-      fetch(`http://localhost:3000/${}`) // add in the word to pass in
-      .then(resp => resp.text())
-      .then(quote => document.getElementById('text').textContent = quote)
-      .catch(console.warn);
-  }
-  
-  luckySearch();
-
-  // appending search result
-
-  function appendResults(data) {
-    animeResults.innerHTML = "";
-    data.forEach(appendResult); //I may be missing something here
-  }
-
-
-  // 
+// 
   function appendResult(data){
     const newLi = document.createElement('li');
     newLi.textContent = `Name: ${animeShow.name}`;
