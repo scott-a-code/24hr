@@ -5,7 +5,7 @@ class AnimeShow {
         // Attributes and methods go here
         this.id = data.id,
         this.name = data.name,
-        this.genre = data.genre,
+        this.metaData = data.genre,
         this.synopsis = data.synopsis,
         this.airing = data.airing,
         this.numberOfEpisodes = data.numberOfEpisodes,
@@ -16,22 +16,9 @@ class AnimeShow {
     static get all() {
         return animeData
     }
-    static addShow(data) {
-        const newShow = new AnimeShow(data);
-        let metaData = [];
-
-
-        metaData.push(data.name.split(' '));
-        metaData.push(data.genre);
-        metaData.push(data.synopsis.split(' '));
-
-
-        newShow.metaData = metaData.flat();
-        animeData.push(newShow);
-        return newShow
-    }
     static findMatches(search) {
         // search is an array
+        console.log(search)
         let shows = AnimeShow.all
         let matchCount = 0
         let matches = []
@@ -49,6 +36,7 @@ class AnimeShow {
             if (matchCount > 0) {
                 matches.push(show)
             }
+            matchCount = 0
         });
 
 
