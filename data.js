@@ -2,19 +2,19 @@ const animeData = [
     {
         id: 1,
         name: 'Fruits Basket: The Final',
-        metaData: [ 'Slice of Life', 'Comedy', 'Supernatural', 'Drama', 'Romance', 'Shoujo'],
+        metaData: [ 'SLICE OF LIFE', 'COMEDY', 'SUPERNATURAL', 'DRAMA', 'ROMANCE', 'SHOUJO'],
         url: 'https://fruba.jp/'
     },
     {
         id: 2,
         name: 'Fullmetal Alchemist: Brotherhood',
-        metaData: [ 'Action', 'Military', 'Adventure', 'Comedy', 'Drama', 'Magic', 'Fantasy', 'Shounen'],
+        metaData: [ 'ACTION', 'MILITARY', 'ADVENTURE',  'DRAMA', 'MAGIC', 'FANTASY', 'SHOUNEN'],
         url: 'https://www.hagaren.jp/fa/'
     },
     {
         id: 3,
         name: 'Fullmetal Alchemist: Brotherhood',
-        metaData: [ 'Action', 'Military', 'Adventure',  'Drama', 'Magic', 'Fantasy', 'Shounen'],
+        metaData: [ 'ACTION', 'MILITARY', 'ADVENTURE',  'DRAMA', 'MAGIC', 'FANTASY', 'SHOUNEN'],
         url: 'https://www.hagaren.jp/fa/'
     },
     {
