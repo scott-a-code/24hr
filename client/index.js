@@ -4,18 +4,18 @@ console.log('hello');
 const pageOfResults = document.getElementById('btn-10rs');
 const singleResults = document.getElementById('btn-singleRes');
 const animeResults = document.querySelector('ul');
+console.log(animeResults);
 
 //Binding event listeners
-pageOfResults.addEventListener('submit', search());
+pageOfResults.addEventListener('submit', search()); //refactor
 singleResults.addEventListener('submit', luckySearch());
-
 
 
 // linking to search button
 function search() {
-      fetch('http://localhost:3000/:search')
+      fetch(`http://localhost:3000/${}`) // add in the word to pass in
       .then(resp => resp.text())
-      .then(quote => document.getElementById('text').innerHTML = quote)
+      .then(quote => document.getElementById('text').textContent = quote)
       .catch(console.warn);
   }
   
@@ -23,9 +23,9 @@ function search() {
 
   // linking to single result button
   function luckySearch() {
-      fetch('http://localhost:3000/lucky/:search')
+      fetch(`http://localhost:3000/${}`) // add in the word to pass in
       .then(resp => resp.text())
-      .then(quote => document.getElementById('text').innerHTML = quote)
+      .then(quote => document.getElementById('text').textContent = quote)
       .catch(console.warn);
   }
   
@@ -35,11 +35,20 @@ function search() {
 
   function appendResults(data) {
     animeResults.innerHTML = "";
-    data.forEach(appendResult);
+    data.forEach(appendResult); //I may be missing something here
   }
 
+
+  // 
   function appendResult(data){
     const newLi = document.createElement('li');
-    newLi.textContent = 
+    newLi.textContent = `Name: ${animeShow.name}`;
     animeResults.append(newLi);
 };
+
+// do we need a delete method to replace the results?
+// function deleteResults(){
+//   fetch('http://localhost:3000/:search',{method : 'DELETE'})
+//   .then(console.log("search results deleted"))
+//   .catch(console.warn);
+// }
