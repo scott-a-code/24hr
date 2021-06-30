@@ -1,6 +1,9 @@
-const express = require('express')
+const express = require('express');
+const cors = require('cors');
 const app = express()
 const port = process.env.PORT || 3000;
+
+app.use(cors());
 // Import our model
 const AnimeShow = require('./models/anime')
 
@@ -20,6 +23,7 @@ app.get('/:search', (req, res) => {
     console.log(req.params)
     // TODO take request params and convert to an array.
     // run a search, send the data back to the client
+
     res.send(AnimeShow.all); // for now just send back all the data so we can format it. 
 });
 

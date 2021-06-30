@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +10,7 @@ body {
     align-items: center;
     /* border: solid blue 2px; */
     height: 100vh;
+    font-family: sans-serif;
 }
 
 .header-container {
@@ -15,16 +20,6 @@ body {
     width: 100%;
     padding: 15px;
 }
-
-/* header {
-    width: 100%;
-    min-height: 35px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: solid green 2px;
-} */
 
 a {
     text-decoration: none;
@@ -38,7 +33,8 @@ section {
     align-items: center;
     /* border: solid gold 2px; */
     width: 500px;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
+    margin-top:-150px;
 }
 
 .navbutton {
@@ -46,7 +42,6 @@ section {
     border: none;
     margin-left: 5px;
     border-radius: 5px;
-    font-family: sans-serif;
     font-size: 13px;
 }
 
@@ -61,23 +56,25 @@ section {
 
 .btn{
     border-radius: 4px;
-    color: rgb(43, 38, 38);
+    color: #3c4043;
     background-color: rgb(252, 248, 248);
-    font-family: sans-serif;
     border: none;
     margin: 10px;
-    width: 180px;
+    width: 190px;
     height: 25px;
+    padding: 15px 0px 30px 0px;
+    font-weight:600;
 }
+
 
 #btn-10rs {
     border-radius: 2px;
-    margin-left: 130px;
+    margin-left: 125px;
 }
 
 #btn-singleRes {
     float: right;
-    margin-right: 130px;
+    margin-right: 125px;
 }
 
 #search-bar{
@@ -105,16 +102,18 @@ section {
 
 footer{
     /* border: solid gold 2px; */
-    height: 30px;
+    height: auto;
     background-color: rgb(240, 232, 232);
     position:absolute;
     bottom:0;
     left:0;
     width:100%;
-    /* text-align:left; */
+    font-family: Arial, Helvetica, sans-serif;
+    color:grey;
     text-align: justify;
 }
 
 #ft-text{
      padding: 15px 30px;    
 } 
+
