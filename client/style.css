@@ -8,9 +8,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: solid blue 2px; */
     height: 100vh;
     font-family: sans-serif;
+
 }
 
 .header-container {
@@ -31,7 +31,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: solid gold 2px; */
     width: 500px;
     margin-bottom: 30px;
     margin-top:-150px;
@@ -66,7 +65,6 @@ section {
     font-weight:600;
 }
 
-
 #btn-10rs {
     border-radius: 2px;
     margin-left: 125px;
@@ -100,8 +98,13 @@ section {
     background-size: 25px;
 } */
 
+/* #search-results {
+    display:block;
+    flex-wrap: wrap;
+    width: 100vw;
+} */
+
 footer{
-    /* border: solid gold 2px; */
     height: auto;
     background-color: rgb(240, 232, 232);
     position:absolute;
@@ -116,4 +119,3 @@ footer{
 #ft-text{
      padding: 15px 30px;    
 } 
-
