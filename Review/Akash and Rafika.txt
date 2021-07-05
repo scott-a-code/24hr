@@ -1,0 +1,43 @@
+Site layout - 
+	Logo in place as words - nice alternative to using a icon.
+	Input search bar in place
+	3x buttons visible
+	"I'm feeling lucky" - returns hard coded message of "Korean freid chicken" - love it 
+	Other 2 buttons result in error in the console "Fetch API cannot load"
+		Potentially because it is trying to fetch something locally
+		"uncaught (in promise)" type error - potentially due to lack of a catch on the fetch
+
+
+Site functionality
+
+index.html
+		Document looks very clean and easy to read.
+		head - looks good - could add a favicon
+Line 15-20 - span used to get google letters in line - nice job / use of the tag
+		possibly bring in an icon instead to save / lines of code
+line 23-24 - <br> used for space between search bar and buttons, could use CSS styling (e.g. adding a margin to the search bar for the same result + enhances control over the layout)
+		Nice how you've defined an output! - line 30
+
+
+	
+CSS
+button - styling of them nicely done
+	- The 3 buttons had the same styling and so had some repeated code, could try using class instead id's for styling
+	- perhaps try and use flex or grid for more styling options
+ 
+line 45 - fetch isn't retreiving text document correcltly as its a local file
+line 44 - spot on function layout, add a catch block at the end for error handling reducing errors in the browsers console.
+
+line 52 - getFood() 
+	- correct use of json in the 'then'
+	- nice stategy of concatenation for adding food items to list items
+	- called food properties correctly in this function
+
+line 69 - function
+	- could have brought in the foodList2.json array to call from that directly vs hardcoding 
+
+
+Server would have been a good alternate startegy to fix some of the issues but current code is very good for not using a server
+
+ReadMe added with good amount of info about task and your handling of it
+Nicely commented to make understanding a lot easier - intentions very clear
